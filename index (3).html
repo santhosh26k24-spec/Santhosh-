@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>Got it 👍
+I’ll help you create a data visualization dashboard using HTML, CSS, and JavaScript with Chart.js (a powerful charting library). The dashboard will display multiple charts (bar, line, pie) and be styled with a simple, clean layout.
+
+Here’s the full code you can run directly in your browser:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Visualization Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 300px !important;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📊 Data Visualization Dashboard</h1>
+
+  <div class="dashboard">
+    <div class="card">
+      <h3>Sales Growth</h3>
+      <canvas id="lineChart"></canvas>
+    </div>
+    <div class="card">
+      <h3>Revenue by Product</h3>
+      <canvas id="barChart"></canvas>
+    </div>
+    <div class="card">
+      <h3>Market Share</h3>
+      <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+
+  <script>
+    // Line Chart
+    new Chart(document.getElementById('lineChart'), {
+      type: 'line',
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+          label: "Sales ($)",
+          data: [500, 700, 800, 600, 900, 1200],
+          borderColor: "#4e73df",
+
+
+</html>
